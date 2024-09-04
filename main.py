@@ -28,7 +28,7 @@ def draw_rectangle(image, rect, index, type):
     cv2.putText(image, type + " " + index, (x, y + height), 0, 0.8, (255, 0, 0), thickness=2, lineType=cv2.FILLED)
 
 def remove_elements(elements):
-    displayed_elements = []
+    displayed_elements =        []
     for element in elements:
         if element.is_displayed():
             # Get the location of the element
