@@ -26,6 +26,11 @@ def draw_rectangle(image, rect, index, type):
     x, y, height, width = int(rect['x']), int(rect['y']), int(rect['height']), int(rect['width'])
     cv2.rectangle(image, (x, y), (x + width, y + height), (0, 0, 255), 2)
     cv2.putText(image, type + " " + index, (x, y + height), 0, 0.8, (255, 0, 0), thickness=2, lineType=cv2.FILLED)
+def draw_rectangle_1(image, rect, index, type):
+    x, y, height, width = int(rect['x']), int(rect['y']), int(rect['height']), int(rect['width'])
+    cv2.rectangle(image, (x, y), (x + width, y + height), (0, 0, 255), 2)
+    cv2.putText(image, type + " " + index, (x, y + height), 0, 0.8, (255, 0, 0), thickness=2, lineType=cv2.FILLED)
+
 
 def remove_elements(elements):
     displayed_elements = []
