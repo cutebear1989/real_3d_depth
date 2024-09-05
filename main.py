@@ -11,7 +11,8 @@ from selenium.webdriver.support.ui import Select
 
 key_names = ["text", "checkbox", "radio", "href", "select"]
 resize_ratio = 2
-
+class body:
+    x = 7
 def draw_rectangle(image, rect, index, type):
     x, y, height, width = int(rect['x']), int(rect['y']), int(rect['height']), int(rect['width'])
     cv2.rectangle(image, (x, y), (x + width, y + height), (0, 0, 255), 2)
