@@ -25,6 +25,8 @@ def draw_rectangle_1(image, rect, index, type):
 
 def remove_elements_1(elements):
     displayed_elements = []
+
+    xxxxx  = 7
     for element in elements:
         if element.is_displayed():
             # Get the location of the element
