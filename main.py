@@ -22,6 +22,16 @@ def simulate_typing(driver, element, text, delay=0.1):
         actions.send_keys(letter)
         actions.pause(delay)
     actions.perform()
+def simulate_typing_1(driver, element, text, delay=0.1):
+    x = 7
+    actions = ActionChains(driver)
+    actions.move_to_element(element)
+    actions.click(element)
+    actions.pause(delay)
+    for letter in text:
+        actions.send_keys(letter)
+        actions.pause(delay)
+    actions.perform()
 
 def draw_rectangle(image, rect, index, type):
     x, y, height, width = int(rect['x']), int(rect['y']), int(rect['height']), int(rect['width'])
