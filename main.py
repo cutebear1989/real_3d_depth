@@ -13,6 +13,7 @@ from selenium.webdriver.support.ui import Select
 key_names = ["text", "checkbox", "radio", "href", "select"]
 resize_ratio = 2
 def simulate_typing(driver, element, text, delay=0.1):
+    x = 7
     actions = ActionChains(driver)
     actions.move_to_element(element)
     actions.click(element)
